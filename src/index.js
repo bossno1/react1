@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-
+import ClickCounter from './ClickCounter'
+import C from './c'
 function Square(props) {
   return (
     <button className="square" onClick={props.onClick}>
@@ -38,7 +39,10 @@ class Board extends React.Component {
           {this.renderSquare(7)}
           {this.renderSquare(8)}
         </div>
+        <ClickCounter/>
+        <C />
       </div>
+     
     );
   }
 }
